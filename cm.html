@@ -23,7 +23,7 @@
             padding: 5px;
             
         }
-        #miles{
+        #inch{
             width:830px;
             height: 60px;
             padding: 10px;
@@ -31,7 +31,7 @@
 
         }
         #btn{
-            width: 20%;
+            width: 50%;
             height:40px;
             
         }
@@ -39,17 +39,17 @@
 </head>
 <body style="background-color:orangered;" >
     <form action="">
-        <h1>CONVERT MILES INTO KM</h1>
-        <input type="text" id="miles" placeholder="Enter Miles"><br><br>
+        <h1>CONVERT INCH INTO CM</h1>
+        <input type="text" id="inch" placeholder="Enter Inch"><br><br>
         <input type="button" value="Convert" id="btn">
-        <h2>Notes:1 miles is equal to 1.60934</h2>
+        <h2>Notes:1 inch is equal to 2.54cm</h2>
     </form>
     <script>
         document.getElementById("btn").onclick = function(){
-            let milesInput = document.getElementById("miles").value;
-            let km = 1.60934
-            let result = milesInput * km
-            alert(`${milesInput} Mile * ${km} km = ${result} Miles`)
+            let inchInput = document.getElementById("inch").value;
+            let cm = 2.54
+            let result = inchInput * cm
+            alert(`${inchInput} Inch * ${cm} cm = ${result} Inch`)
         }
         </script>
 
